@@ -1,0 +1,58 @@
+Datatype
+--------------
+Every data is of some type. That type is known as datatype.
+It is of two types.
+1.Primitive datatype
+2.Non-primitive datatype
+
+Primitive Datatype
+-------------------------
+We will go for primitive datatype when we want to store a countable unit.
+It is further divided into five types.
+1.Number
+2.String
+3.Boolean
+4.Null
+5.Undefined
+
+1.Number
+--------------
+It is used to store numbers,integers.
+var a=5
+type of a // output will be 'number'
+
+2.String
+-----------
+It is a collection of characters, numbers and special characters
+In JS String is declared between '  ' &" "
+var s="xyz"
+typeof s//string
+
+3.Boolean
+--------------
+It contains two values. [True & False]
+var d= true
+typeof d//boolean
+
+4.Null
+-----------
+var e=null
+typeof e//null
+If we want to store nothing inside of a variable then we can assign null into it.
+
+5.Undefined
+----------------
+If I want to create a variable and if I am not assigning any value to it then it is called Undefined.
+var t
+typeof t//undefined
+
+
+Non-Primitive Datatype
+-------------------------------
+We will go for non-primitive datatype when we want to store an uncountable variables.
+
+
+Methods
+------------
+
+

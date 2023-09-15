@@ -1,0 +1,402 @@
+Programming Language :- It is a language through which we can write instructions for our device to get our desired output.
+Java Script :- It is a high level, interpreted programming language which supports OOP's concept in it. It is used to perform client-side Web Development.
+High level language :- The language which is easily understood by humans / programmer friendly language.
+Interpreted :- Line by line compilation and execution
+
+Features of JS
+------------------
+Easy to learn and code
+Interpreted language
+Lightweight
+Easily accessible
+Case-sensitive
+Supports OOPs concept
+
+Companies using JavaScript
+------------------------------------
+Google
+Paypal
+Instagram
+YouTube
+LinkedIn
+
+Identifiers
+-------------
+It is used to identify a class , a method and a variable by providing them a name.
+
+Rules for writing Identifiers
+1. We are not allowed to provide any integer as an identifier directly.
+2. We are allowed to provide both characters and integers combined as an identifier. But it should not start from an integer.
+3. We are not allowed to provide any special character as an identifier except " $ " and "  _ " .
+4. We are not allowed to provide any keyword as an identifier.
+
+Keyword
+-----------
+These are pre-reserved words through which we can perform some specific actions only.
+Total numbers of keywords in JavaScript is 63
+
+Variables
+-----------
+It is named given to a memory location for storing values.
+Syntax ---> var variablename
+Datatype
+--------------
+Every data is of some type. That type is known as datatype.
+It is of two types.
+1.Primitive datatype
+2.Non-primitive datatype
+
+Primitive Datatype
+-------------------------
+We will go for primitive datatype when we want to store a countable unit.
+It is further divided into five types.
+1.Number
+2.String
+3.Boolean
+4.Null
+5.Undefined
+
+1.Number
+--------------
+It is used to store numbers,integers.
+var a=5
+type of a // output will be 'number'
+
+2.String
+-----------
+It is a collection of characters, numbers and special characters
+In JS String is declared between '  ' &" "
+var s="xyz"
+typeof s//string
+
+3.Boolean
+--------------
+It contains two values. [True & False]
+var d= true
+typeof d//boolean
+
+4.Null
+-----------
+var e=null
+typeof e//null
+If we want to store nothing inside of a variable then we can assign null into it.
+
+5.Undefined
+----------------
+If I want to create a variable and if I am not assigning any value to it then it is called Undefined.
+var t
+typeof t//undefined
+
+
+Non-Primitive Datatype
+-------------------------------
+We will go for non-primitive datatype when we want to store an uncountable variables.
+
+
+Methods
+------------
+In Javascript we are having 3 important methods.
+1. alert
+2. console.log
+3. prompt
+
+1. alert
+-----------
+It is used to provide pop-up notification in our webpage.
+alert("Hello Bibhu")//Hello Bibhu
+
+2. console.log
+----------------------
+console.log("Hii")
+It is used to print the message in our console.
+
+3. prompt
+---------------
+It is used to take user input.
+The default type of prompt is String.
+prompt("Enter your age")// Enter your age
+21
+O/P=21
+
+
+
+Operators
+--------------
+These are the symbols which perform some sort of operations to get our desired output.
+
+1. Arithmetic Operator(+,-,*,/,%,**,++,--)
+
+a. ** :- exponent/double star
+e.g= (2**4)=16
+
+b. ++ :- increament operator
+k=10
+++k
+k=11
+k++
+k=11
+k=12
+Same goes for Decreament operfator
+
+2.Assignment Operator(=,+=,-=,*=,/=,%=,**=)
+
+[b=b-5] this expression can be alternatively written as [b-=5]
+Same goes for
+[a*=5]=[a=a*5]
+
+3.Comparison Operator(==,!=,===,>,<,<=,>=)
+var c='10'
+var b=10
+var a=10
+a==b //true
+a==c //true
+a===c //false(incompatible types)
+The difference between == and === is == only checks the value but === checks the type with the value.
+
+4.Logical Operator(&&,||)
+When the both of the conditions are true then only the && operator gives true for any other outcomes the operator gives false output.
+When any of the condition is true then the || operator gives true but if the both of the conditions give false then the operator gives false.
+
+
+Conditional Statement
+------------------------------
+These are the statements which carries a condition within it.
+1.if
+2.if...else...
+3.if...else if...else
+
+
+Looping Statement
+-------------------------
+These are the statements which are used when we want to execute some statements multiple number of times as per our requirement.
+It is of two types.
+1.While loop
+2.For loop
+
+While loop
+--------------
+Q.Write a program to print 1-5
+colsole.log("Heyy")
+var x=1
+while(x<=5)
+{
+console.log(x)
+x++
+}
+
+Q.Write a program to find even numbers within a given range
+var x=2
+while(x<=20)
+{
+console.log(x)
+x+=2
+}
+
+
+For Loop
+------------
+For loop is implemented when we know the exact number of iterations.
+e.g.--  >
+console.log("Hii")
+for(var x=1;x<5;x++)
+{
+console.log("Hello")
+}
+console.log("Byee")
+
+o/p
+Hii
+Hello
+Hello
+Hello
+Hello
+Byee
+
+
+
+
+Function
+------------
+It is a block of code which can be reused multiple times as per our requirement.
+it is a space where you can write business logics and application logics.
+First we have to declare a function after that we can call it.
+Functions are of two types
+1. Pre-defined
+2. User-Defined
+
+Pre-defined function
+---------------------------
+These are the functions which are defined previously by JS to perform some specific activity.
+eg---> typeof
+
+User defined function
+-----------------------------
+These are the functions declared by the user as per its requirement.
+Syntax---> function function name(arguments)
+	{
+	statements
+	}
+The above expression is termed as function declaration.
+Function call------> function name(arguments)
+
+eg--> function show()
+	{
+	console.log("Hii")
+	}
+	show()
+
+We can perform function-call multiple times.
+
+ function show()
+	{
+	console.log("Hii")
+	}
+for(var x=1;x<=5;x++)
+{
+	show()
+}
+output 
+--------
+Hii
+Hii
+Hii
+Hii
+Hii
+
+
+
+
+Scope Of Variables
+================
+In JS there are two types of scopes.
+1. Global Scope
+2. Local Scope
+
+The scope defines the accessibility of that variable.
+
+Global Scope
+------------------
+The variable which is declared directly in main space is said to be Global Variable
+Global variables are accessible everywhere directly.
+
+var x=5
+console.log(x)
+function show() {
+console.log("Inside show function")
+console.log(x)
+}
+function display() {
+console.log("Inside display function")
+console.log(x)
+}
+
+show()
+display()
+
+Local Scope
+-----------------
+The variables which are declared inside of function is said to be local scope of a variable.
+Those variables can be accessed within its bracket.
+
+function show()
+{
+var x=300
+console.log("Inside show function")
+console.(x)
+}
+function display(){
+console.log("Inside display function")
+}
+show()
+console.log(x)
+
+Priority should be given to Local variable always.
+
+
+Class
+--------------
+Class is a blueprint which is used to create objects
+It is created by the help of class keyword
+
+syntax
+---------
+class classname
+{
+}
+
+Object
+----------
+It is a real time entity which is having some state and behaviour
+We always create an object of a class
+If we want to create an object of a class then we have to take the help of new keyword
+
+syntax
+---------
+let object reference = new class name
+
+We can create multiple number of objects of a class
+
+Method
+-----------
+It is a space where we can write business logic or application logic.
+syntax
+----------
+class classname
+{
+method name
+{
+implementation
+}
+}
+
+All methods are accessed by object reference.
+
+example
+========
+class A
+{
+xyz()
+{
+alert("Hello")
+}
+}
+let b=new A()
+b.xyz();
+
+===============
+class A
+{
+display(x)
+{
+console.log(x);
+}
+}
+let b= new A()
+b.display('abcd')
+==================
+class Railway
+{
+bookticket(name,phone,destination)
+{
+this.name=name
+this.phone=phone
+this.dest=dest
+}
+display()
+{
+console.log("your name is"+ this.name)
+console.log("your phone is"+ this.phone)
+console.log("your destination is"+ this.dest)
+}
+cancel()
+{
+console.log("Your ticket is cancelled" +this.name)
+}
+}
+let a=new Railway()
+a.bookticket("BK",123456,"BBSR")
+let b=new Railway()
+b.bookticket("Charlie",987654,"CTC")
+a.display()
+b.display()
+a.cancel()

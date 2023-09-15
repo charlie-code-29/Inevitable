@@ -1,0 +1,129 @@
+JAR (Java archive file)
+-----------------------
+
+
+files present in Jar
+--------------------
+.java
+.class
+.config
+.xml
+.properties
+
+In JDK(jrt.fs) all jar files are there
+- all inbuilt classes/packages are compressed and kept in jar 
+
+difference between jar and runnable jar
+---------------------------------------
+jar(executable)-doesnot contain main method (use/access it as library file but can't run it)
+runnable jar-main menthod is mandatory (can't access/use it but can run it)-running program only - only in cmd
+
+jar file can be used in two ways
+1.internal
+2.external 
+
+Steps to make jar file
+----------------------
+1. right click on project
+2. click on export
+3. select java
+4. select jar file
+5. keep it all default
+6. browse the location
+7. finish
+
+*Change the workspace or project to bring the jar file into a new project
+
+Steps for bringing jar file external way
+----------------------------------------
+1. right click on project
+2. build path
+3. configure build path
+4. go to libraries
+5. select classpath
+6. click on add external jar
+7. select jar
+8. apply and close
+
+disadvantage of external way = if the jar file gets deleted then we can't use it and can't share it with others
+
+
+Steps for bringing jar file internal way
+----------------------------------------
+1. create a folder inside project
+2. give name to the project as lib(folder name should be lib only)
+3. copy the jar file and paste it inside the lib folder
+4. build path
+5. configure build path
+6. go to libraries
+7. select classpath
+8. select add jars
+9. select the project-lib-jar
+10. apply and close
+
+advantage of using internal way = the jar will be included inside the project so it will be easy to run anywhere and anyone can run it without having the physical jar file
+
+
+Jar class notes
+---------------
+---------------
+
+-Jar stands for java archive file.
+-It is in zip format in which many files compressed into a single file.
+
+components of jar 
+----------------
+A jar contains .java, .class, .config, .xml, .properties.
+
+types of jar file
+-----------------
+we are having two types of jar file. they are
+1.jar(executable jar)
+2. runnable jar
+
+creating a jar file
+-------------------
+to create a jar file, first we will create a java project and we will include the packages and classes which we want to add in jar.
+-right click on project
+-export
+-select jar
+-select destination
+-finish
+
+
+including jar files in the project
+---------------------------------
+we can include jar files into project in two ways
+1.External way
+2. internal way(recommended)
+
+including jar files in external way 
+------------------------------------
+create one project
+-right click on project
+-go to build path
+- select libraries
+-add external jars
+-select jar file
+-apply and close
+
+in external way of including jar file, if we change the jar file in a particular location then whatever the jar file we have included, we cannot use it.
+
+including jar files in internal way
+-----------------------------------
+create a java project
+-create a folder inside the java project(named it as lib)
+-copy the jar file and paste it in lib folder
+-right click on pasted jar file
+-select add to build path
+
+executable jar
+--------------
+in executable jar there is no class which conatins the main method.
+this executable jar is suitable to provide external library classes.
+
+Runnable jar
+------------
+in runnable jar, there is a class which conatins main method in it.
+this jar is suitable to execute the program without any other classes.
+

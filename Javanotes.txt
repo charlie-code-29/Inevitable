@@ -1,0 +1,30 @@
+Methods of Vector
+------------------------
+addElement(Object o);
+removeElement(Object o);
+removeElementAt(int index);
+removeAllElements();
+Object elementAt(int index);
+Object firstElement();
+Object lastElement();
+int size();---> no of elements present in vector
+int capacity();----> total number of elements it can hold
+Enumeration enumeration(); ---->Cursor of java
+
+Constructors
+-----------------
+Vector v= new Vector();
+default capacity=10;
+new capacity= initial capacity*2;
+Vector v= new Vector(int initial capacity);
+Vector v=new Vector(Collection c);
+
+Stack s= new Stack();
+
+Methods
+------------
+Object push(Object o)---> add an element
+Object peek();----> returns the top of the stack without removing
+Object pop();-------> returns the top of stack by removing
+booelan empty(); ---> Checks whether the stack is empty or not
+int search(Object o);----> It returns offset if present otherwise returns -1
